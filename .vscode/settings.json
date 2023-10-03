@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    "cSpell.words": [
+        "HINSTANCE",
+        "HREDRAW",
+        "HWND",
+        "LOGFONT",
+        "LPARAM",
+        "lpfn",
+        "LPSTR",
+        "lpsz",
+        "LRESULT",
+        "PAINTSTRUCT",
+        "WNDCLASS",
+        "WPARAM"
+    ]
+}
