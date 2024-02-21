@@ -7,7 +7,7 @@ using namespace std;
 
 const int YEAR = 2024;
 const int MON = 6;
-const int DAY = 17;
+const int DAY = 15;
 const int FontHeight = 60;
 
 struct AccentPolicy
@@ -53,6 +53,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int n
         }
         case WM_PAINT:
         {
+            SetWindowPos(hWnd, HWND_TOPMOST, (GetSystemMetrics(SM_CXSCREEN) - Output.length() * FontHeight) / 2, 0, Output.length() * FontHeight, FontHeight, SWP_SHOWWINDOW);
             PAINTSTRUCT Paint;
             HDC Hdc = BeginPaint(hWnd, &Paint);
             RECT Rect;
@@ -81,11 +82,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int n
     WindowsClass.lpszClassName = L"CountdownClass";
     RegisterClass(&WindowsClass);
 
-    HWND hWnd = CreateWindowEx(WS_EX_TOOLWINDOW, L"CountdownClass", L"中考倒计时", WS_VISIBLE | WS_POPUP,
-                               (GetSystemMetrics(SM_CXSCREEN) - Output.length() * FontHeight) / 2, 0,
-                               Output.length() * FontHeight,
-                               FontHeight, NULL, NULL, hInstance, NULL);
-    SetWindowPos(hWnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
+    CreateWindowEx(WS_EX_TOOLWINDOW, L"CountdownClass", L"中考倒计时", WS_VISIBLE | WS_POPUP, 1, 1, 1, 1, NULL, NULL, hInstance, NULL);
     MSG Msg;
     while (GetMessage(&Msg, NULL, 0, 0))
     {
