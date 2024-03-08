@@ -7,6 +7,7 @@
         "limits": "cpp"
     },
     "cSpell.words": [
+        "CXSCREEN",
         "HINSTANCE",
         "HREDRAW",
         "HWND",
@@ -18,9 +19,12 @@
         "lpsz",
         "LRESULT",
         "PAINTSTRUCT",
+        "PTSTR",
         "RBUTTONUP",
+        "SHOWWINDOW",
         "tcscpy",
         "TOOLWINDOW",
+        "ttostring",
         "WNDCLASS",
         "WPARAM"
     ]

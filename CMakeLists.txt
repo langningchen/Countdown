@@ -13,4 +13,4 @@ add_compile_definitions(UNICODE _UNICODE)
 add_executable(CountDown
     main.cpp
 )
-target_link_libraries(CountDown PRIVATE)
+target_link_libraries(CountDown PRIVATE dwmapi)
