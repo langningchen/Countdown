@@ -1,11 +1,16 @@
 {
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "random": "cpp",
+        "limits": "cpp"
     },
     "cSpell.words": [
         "HINSTANCE",
         "HREDRAW",
         "HWND",
+        "LBUTTONUP",
         "LOGFONT",
         "LPARAM",
         "lpfn",
@@ -13,6 +18,9 @@
         "lpsz",
         "LRESULT",
         "PAINTSTRUCT",
+        "RBUTTONUP",
+        "tcscpy",
+        "TOOLWINDOW",
         "WNDCLASS",
         "WPARAM"
     ]
