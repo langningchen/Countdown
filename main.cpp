@@ -119,9 +119,9 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int n
     CountdownString = ReplaceAll(CountdownString, TEXT("${CurrentMonth}"), _ttostring(CurrentDate.wMonth));
     CountdownString = ReplaceAll(CountdownString, TEXT("${CurrentDay}"), _ttostring(CurrentDate.wDay));
 
-    CountdownString = ReplaceAll(CountdownString, TEXT("${YearLeft}"), _ttostring(CurrentDate.wYear - TargetDate.wYear));
-    CountdownString = ReplaceAll(CountdownString, TEXT("${MonthLeft}"), _ttostring(CurrentDate.wMonth - TargetDate.wMonth));
-    CountdownString = ReplaceAll(CountdownString, TEXT("${DayLeft}"), _ttostring(CurrentDate.wDay - TargetDate.wDay));
+    CountdownString = ReplaceAll(CountdownString, TEXT("${YearsLeft}"), _ttostring(TargetDate.wYear - CurrentDate.wYear));
+    CountdownString = ReplaceAll(CountdownString, TEXT("${MonthsLeft}"), _ttostring(TargetDate.wMonth - CurrentDate.wMonth));
+    CountdownString = ReplaceAll(CountdownString, TEXT("${DaysLeft}"), _ttostring(TargetDate.wDay - CurrentDate.wDay));
 
     CountdownString = ReplaceAll(CountdownString, TEXT("${AllDaysLeft}"), _ttostring(AllDaysLeft));
 
